@@ -1,0 +1,81 @@
+<%  layout("/layouts/boilerplate") %>
+  <div class="row mt-3">
+         <div class="col-8 offset-3">
+  
+    <h1><b>Tyre Details</b></h1>
+    </div>
+
+  <div class="card  col-4  offset-2  show-card">
+    
+        <img src="<%= listing.image %>"
+         class="card-img-top show-img"
+          alt="listing_image"
+          style="height: 23rem"
+          />
+        <div class="card-body">
+          <p class="card-text">
+            <b><%= listing.title %></b> <br>
+            <%=listing.description %><br>
+            &#8377; <%=listing.price.toLocaleString("en-IN") %><br>
+            <%=listing.model %><br>
+            <%=listing.type %><br>
+        </p>
+        </div>
+      
+  </div>
+
+    
+    <br>
+
+         <div class="btns">
+          <a href="/listings/<%= listing._id %>/edit" class="btn  btn-dark col-1  offset-1  edit-btn"> Edit </a>
+
+        
+     
+    
+        
+          <form  method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
+            <button class="btn  btn-dark   offset-1">Delete </button>
+                </form>
+
+
+                <button class="btn  btn-dark col-1   offset-1  "  id="purchase">Purchase </button>
+                <button class="btn  btn-dark   offset-1  " id="delete">Delete Order </button>
+
+
+
+        </div>
+    
+              <script>
+              
+              
+
+              document.getElementById("purchase").addEventListener("click", function() {
+            alert("Your have Orderd to puchase this tyre from Service and Care");
+            
+
+        });
+
+
+        document.getElementById("delete").addEventListener("click", function() {
+            alert("Your Order has been Deleted");
+            
+
+        });
+              
+
+
+              
+            </script>
+              
+              
+              
+    
+    
+     
+     </div>
+
+
+      
+
+        

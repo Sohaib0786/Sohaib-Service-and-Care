@@ -1,0 +1,52 @@
+<% layout("/layouts/boilerplate") %>
+
+<style>
+  .heading2{
+    background-color: black;
+  }
+
+</style>
+
+
+      <div class="row mt-3">
+        <h2 class="col-5 offset-2  heading2">Login to Service and Care</h2>
+            <div class="col-5 offset-2">
+
+                <form action="/login" method="POST" class="needs-validation"  novalidate>
+                        <div class="mb-3">
+                        <lable for="username" class="form-label">Username</lable>
+                        <input
+                          name="username"
+                          id="username"
+                          type="text"
+                          class="form-control"
+                          required
+                          />
+                          
+
+                        </div>
+                              
+                              <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input 
+                                 name="password"
+                                 id="password"
+                                 type="password"
+                                 class="form-control"
+                                   required
+                                    />
+                                
+                              </div>
+                              <button class="btn btn-dark">Login</button>
+                      </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+

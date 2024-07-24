@@ -1,0 +1,86 @@
+
+
+<%  layout("/layouts/boilerplate") %>
+
+<body >
+  <style>
+    body{
+      background-color: whitesmoke !important;
+    }
+    
+
+    .collect{
+      display: flex;
+      align-items: center;
+      width: 100%;
+    
+      margin-right: 300px;
+      margin-top: 50px;
+      margin-bottom: 80px;
+      
+      
+    
+    }
+    
+  </style>
+        <div class="collect row   row-cols-lg-3 row-cols-md-2  row-cols-sm-1   ">
+
+     <div class="logo1">
+    <img src="https://img.freepik.com/premium-photo/car-isolated-white-background-lucid-air-white-car-blank-clean-white-background-white-black_655090-607467.jpg?w=740" alt="" height="340rem" width="400rem"/>
+</div>
+
+   <div class="logo1">
+    <img src="https://img.freepik.com/premium-photo/car-isolated-white-background-kia-ev9-white-car-blank-clean-white-background-t-white-black_655090-607426.jpg?w=740" alt="" height="340rem" width="400rem"/>
+   </div>
+
+
+   <div class="logo1">
+    <img src="https://img.freepik.com/premium-photo/car-isolated-white-background-lucid-air-white-car-blank-clean-white-background-white-black_655090-607467.jpg?w=740" alt="" height="340rem" width="400rem"/>
+   </div>
+  
+ 
+
+</div>
+
+
+
+ <!---<form method="GET" action="/listing/new">
+        <button>Create New Listing</button>
+    </form>   --->
+         
+         <h1><b>All NEW TYRES FOR SALE</b></h1>
+         
+
+         <br>
+      
+
+       <div class="row row-cols-lg-4  row-cols-md-3 row-cols-sm-1">
+        <%  for(let listing of allListings){  %>
+          <a href="/listings/<%= listing._id %>"  class="listing-link">
+            <div class="card col listing-card" >
+                <img 
+                src="<%=listing.image %>" 
+                class="card-img-top" 
+                alt="listing_image"  
+                style="height: 18rem"
+                />
+                <div class="card-img-overlay"></div>
+                <div class="card-body">
+                  <p class="card-text">
+                 <b>   <%=listing.title %><br></b>
+                   &#8377 <%=listing.price.toLocaleString("en-IN") %>/on showroom
+                </p>
+              </div>
+              </div>
+              </a>
+              <% } %>
+       </div>
+    
+
+
+    
+    
+</body>
+
+
+    

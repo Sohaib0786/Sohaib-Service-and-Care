@@ -1,0 +1,222 @@
+<% layout("/layouts/boilerplate") %>
+
+<body>
+    
+<style>
+    
+   body{
+    background-color: black !important;
+    color: whitesmoke;
+   }
+
+   .phot{
+    margin-left: 0px !important;
+    margin: 50px;
+    width: 750px;
+  height: 200px;
+  
+
+}
+   
+   .phot2{
+    height: 350px;
+    width: 600px;
+    background-color: black;
+    color: white;
+    margin: 50px;
+
+   }
+
+   .cars{
+    display:flex;
+
+    
+    }
+   
+
+
+
+   .title {
+    font-style: "Roboto";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    text-align: center;  
+    font-size: 150px; 
+     font-weight:bold;
+     font-family: 'Roboto', sans-serif;
+     margin-left: 0px;
+      text-decoration: solid;
+  
+color:white;
+}
+
+
+
+.lambor{
+  background-color: aqua;
+  height: 330px;
+  width: 300px;
+  border: 10px solid black;
+  border-radius: 30px;
+  margin-bottom: 20px;
+
+
+}
+.lambor{
+  border-radius: 23px ;
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+
+
+}
+
+
+
+@keyframes floating{
+   
+  0% {
+    transform: translate(0,0px);
+  }
+  50%{
+    transform: translate(0,20px);
+  }
+  100%{
+    transform: translate(0,-0px);
+  }
+
+
+}
+
+img{
+border: 6px;
+border-radius: 50px solid black;
+}
+
+
+
+   
+</style>
+
+
+<div class="cars  col col-row-lg-3 col-row-md-2 col-row-sm-1">
+<div class="phot">
+ 
+    <!-- Element to contain animated typing -->
+    
+
+    
+        <div id="title">
+          
+            <div class="head1">
+              <h1>COME TO US</h1>
+            </div>
+
+            <div class="head2">
+              <H1> FOR CAR</H1>
+            </div>
+            
+            <H1>
+
+          <span id="element">
+
+             </span>
+</H1>
+          
+
+
+<br>
+<br>
+
+
+
+        </div>
+  
+         <div class="para">
+          <p>
+
+        <span class="para1">
+             
+  
+        </span>
+        </p>
+        </div>
+        
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed('#element', {
+        strings: [" UPGRADATION   "," MAINTENANCE"],
+        typeSpeed: 120,
+        backSpeed:120,
+        loop:true
+        
+      });
+    </script>
+
+
+<style>
+  .div2{
+    height: 200px;
+    width: 300px;
+
+  }
+
+
+</style>
+
+
+
+
+     <div class="div2">
+
+
+      <!---
+
+<script>
+  var typed = new Typed('.para1', {
+    strings: ["kjacnjascjkasncjas sjkcnbasjcbjasncjaschascnasjcascsjacnuosac sajcbasjbcjasncbjascnjascj"],
+    typeSpeed: 120,
+    backSpeed:120,
+    loop:true
+    
+  });
+</script>
+--->
+   <img src="https://www.shutterstock.com/image-illustration/black-modern-car-headlights-front-600nw-771184300.jpg" alt="" height="200px" width="300px"/>
+
+
+</div>
+
+
+
+
+  
+
+</div>
+
+
+          <div class="phot2">
+            
+    <div class="lambor">
+      <img src="https://img.freepik.com/premium-photo/black-sports-car-coupe-black-background-3d-render-ai-generated_984269-2470.jpg?w=740" alt="" height="340" width="550px"/>            
+             </div>
+  
+
+          </div>
+
+
+</div>
+
+
+
+
+</body>
+

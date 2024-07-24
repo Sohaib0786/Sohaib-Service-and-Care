@@ -1,0 +1,66 @@
+<style>
+
+  #home:hover{
+    background-color: black !important;
+    color: white !important;
+
+  }
+  #home{
+    border-radius: 5px;
+  }
+</style>
+
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom  sticky-top">
+    <div class="container-fluid">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Jcnv7Xp-7tB93uFIapyCANnmbYiiwFPHcA&s" alt="photo1" height="100px" width="200px">
+      <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup" 
+      >
+             
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+      
+        
+    <a class="nav-link active" aria-current="page" href="/"><button id="home"><b>Home</b></button></a>
+          <a class="nav-link" href="/listings"><button id="home"><b>Tyres for Sale</b></button></a>
+          <a class="nav-link" href="/listing/new"><button id="home"><b>Add new Tyre</b></button></a>
+          
+        </div>
+        <div class="navbar-nav  ms-auto">
+
+
+          <img src="https://img.freepik.com/premium-vector/tire-logo-design-template-vector_227744-819.jpg" alt="logo1" height="110px" width="110px"/>
+          <img src="https://img.freepik.com/premium-vector/tire-logo-design-template-vector_227744-819.jpg" alt="logo1" height="110px" width="110px"/>
+
+          
+        </div>
+        <div class="navbar-nav ms-auto">
+         
+          <% if(!currUser) {%>   
+          <a class="nav-link" href="/signup">
+            <button 
+            class="signup "
+             style="background-color: white;   border-radius: 45px; border: 5px solid black;"  >SignUp</button> </a>
+        
+          <a class="nav-link"
+           href="/login"><button style="background-color: white;   border-radius: 45px; border:5px solid black" >Log in</button></a>
+        
+          <% } %>
+          <% if(currUser) { %>
+            
+          <a class="nav-link" href="/logout"><button>  <b>Log out</b></button></a>
+        
+            <% } %>
+        </div>
+
+
+
+      </div>
+    </div>
+  </nav>
